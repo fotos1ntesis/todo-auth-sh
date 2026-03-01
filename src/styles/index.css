@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+@layer base {
+    body {
+        @apply font-montserrat ;
+    }
+
+    h1 {
+        @apply font-medium text-2xl ;
+    }
+
+    p, a {
+        @apply text-[13px];
+    }
+}
+
+@layer components {
+    .form {
+        @apply flex flex-col items-center gap-y-4;
+    }
+
+    a {
+        @apply hover:underline;
+    }
+}
+
+
