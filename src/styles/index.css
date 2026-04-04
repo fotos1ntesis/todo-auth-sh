@@ -21,7 +21,7 @@
 
 @layer components {
     .form {
-        @apply flex flex-col items-center gap-y-4;
+        @apply flex flex-col text-center gap-y-3 w-70;
     }
 
     a {

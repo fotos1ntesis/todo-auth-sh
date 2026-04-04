@@ -6,7 +6,7 @@ export default function Form({title, handleClick}) {
     const [pass, setPass] = React.useState("");
 
     return (
-        <div className="flex flex-col gap-y-2 w-65">
+        <div className="form">
             <Input
                 type="email"
                 value={email}

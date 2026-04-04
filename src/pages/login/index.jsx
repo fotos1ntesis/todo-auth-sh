@@ -1,4 +1,5 @@
 import React from "react";
+
 import Form from "../../components/form/index.jsx";
 
 import {setUser} from "../../store/slices/userSlice";
@@ -19,16 +20,18 @@ export default function LoginPage() {
 
     const handleLogin = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
-            .then(({user}) => {
+            .then(async ({user}) => {
+                const token = await user.getIdToken();
                 dispatch(
                     setUser({
                         email: user.email,
                         id: user.uid,
-                        token: user.accessToken,
+                        token: token,
                     })
                 );
                 navigate("/");
             })
+
             .catch((error) => {
                 switch (error.code) {
                     case 'auth/invalid-credential':

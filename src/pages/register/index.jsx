@@ -29,6 +29,7 @@ export default function RegisterPage() {
                 );
                 navigate("/");
             })
+
             .catch((error) => {
                 switch (error.code) {
                     case "auth/email-already-in-use":
