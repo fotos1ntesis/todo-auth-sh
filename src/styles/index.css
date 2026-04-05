@@ -3,15 +3,25 @@
 
 @theme{
     --font-montserrat: 'Montserrat', sans-serif;
+
+    --color-blue: #3628F1;
+    --color-red: #f25a5a;
+    --color-bg: #1B1C20;
+    --color-white: #FCFDFE;
+    --color-input: #27282C;
 }
 
 @layer base {
     body {
-        @apply font-montserrat ;
+        @apply font-montserrat bg-bg scroll-smooth;
+    }
+
+    input {
+        @apply outline-none;
     }
 
     h1 {
-        @apply font-medium text-2xl ;
+        @apply font-medium text-[30px] text-white;
     }
 
     p, a {
@@ -21,7 +31,7 @@
 
 @layer components {
     .form {
-        @apply flex flex-col text-center gap-y-3 w-70;
+        @apply flex flex-col text-center gap-y-3 w-100 px-1;
     }
 
     a {
@@ -29,4 +39,10 @@
     }
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px #27282C inset !important;
+    -webkit-text-fill-color: #FCFDFE !important;
+}
 
