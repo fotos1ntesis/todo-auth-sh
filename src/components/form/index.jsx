@@ -6,7 +6,7 @@ export default function Form({ title, handleClick }) {
 
   return (
     <>
-      {/*Ввод данный Email*/}
+      {/*Email*/}
       <div className="flex justify-between items-center h-15 bg-input rounded-[25px] px-5">
         <input
           type="email"
@@ -40,7 +40,7 @@ export default function Form({ title, handleClick }) {
         </svg>
       </div>
 
-      {/*Ввод данный Пароль*/}
+      {/*Пароль*/}
       <div className="flex justify-between items-center h-15 bg-input rounded-[25px] px-5">
         <input
           type="password"

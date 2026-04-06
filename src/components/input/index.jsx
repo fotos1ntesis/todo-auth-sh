@@ -49,7 +49,7 @@ export default function Input() {
 
       {/*Блок кнопак*/}
       <div className="flex justify-between items-center gap-x-2">
-        {/*Кнопка отправки данных*/}
+        {/*Кнопка отправки тасков*/}
         <div
           className="cursor-pointer transition-all duration-300 active:scale-95 hover:bg-[#343538] w-10 h-10 rounded-full items-center flex justify-center"
           onClick={handleAddTask}
