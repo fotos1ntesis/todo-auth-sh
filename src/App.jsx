@@ -1,4 +1,4 @@
-import HomePage from './pages/home/index.jsx';
+import { HomePage } from './pages/home/index.jsx';
 import LoginPage from './pages/login/index.jsx';
 import RegisterPage from './pages/register/index.jsx';
 

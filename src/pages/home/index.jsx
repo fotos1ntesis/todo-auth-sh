@@ -7,7 +7,7 @@ import { useTasks } from '../../hooks/useTasks.js';
 import Input from '../../components/input/index.jsx';
 import BtnSlepoy from '../../components/btnSlepoy/index.jsx';
 
-export default function HomePage() {
+export function HomePage() {
   const { isAuth } = useAuth();
   const { tasks, maxTask, deleteTask } = useTasks();
 
@@ -26,11 +26,11 @@ export default function HomePage() {
 
   return isAuth ? (
     <div className="flex flex-col gap-y-4 text-center w-165 h-100dvh">
-      <h1 className=" font-semibold text-2xl absolute top-15 left-[50%] -translate-x-1/2">
+      <h1 className="font-semibold text-2xl absolute top-15 left-[50%] -translate-x-1/2">
         To do list {tasks.length}/{maxTask}
       </h1>
 
-      {/*Список тасков*/}
+      {/* Список тасков */}
       <div className="flex flex-col gap-y-8 h-90 wrap-break-word hyphens-auto">
         {tasks.length > 0 ? (
           tasks.slice(0, maxTask).map((task, index) => (
