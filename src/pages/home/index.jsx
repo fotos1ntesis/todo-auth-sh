@@ -25,7 +25,7 @@ export function HomePage() {
   };
 
   return isAuth ? (
-    <div className="flex flex-col gap-y-4 text-center w-165 h-100dvh">
+    <div className="flex flex-col text-center gap-y-4 w-165 h-100dvh">
       <h1 className="font-semibold text-2xl absolute top-15 left-[50%] -translate-x-1/2">
         To do list {tasks.length}/{maxTask}
       </h1>
@@ -48,9 +48,9 @@ export function HomePage() {
       </div>
 
       {/*Панель навигации*/}
-      <div className="w-165 absolute bottom-5 left-[50%] -translate-x-1/2 flex flex-col gap-y-2">
+      <div className="w-165 bottom-5 left-[50%] -translate-x-1/2 flex flex-col gap-y-2  absolute">
         <Input />
-        {/*Кнопки*/}
+        {/* Кнопки */}
         <div className="flex items-center justify-center gap-x-2 text-white/80">
           <span className="text-[13px]">Для слабовидящих:</span>
           <BtnSlepoy size={size} setSize={setSize} />

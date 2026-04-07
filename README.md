@@ -1,1 +1,1 @@
-Аутентификация, регистрация
+Аутентификация, todo + redux, tailwind css, firebase
